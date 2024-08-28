@@ -1,0 +1,33 @@
+.textBanner {
+  font-family: var(--Kanit);
+  font-size: clamp(1.25rem, 0.357rem + 4.464vw, 4.375rem);
+  font-weight: 600;
+}
+
+.textH1 {
+  font-family: var(--Kanit);
+  font-size: var(--Size-h1);
+  font-weight: 600;
+}
+
+.textH2 {
+  font-family: var(--Kanit);
+  font-weight: normal;
+  font-size: var(--Size-h2);
+}
+.textH3 {
+  font-family: var(--Kanit);
+  font-weight: 500;
+  font-size: var(--Size-h3);
+}
+
+.textP {
+  font-family: var(--Kanit);
+  font-weight: normal;
+  font-size: var(--Size-p);
+}
+.textPb {
+  font-family: var(--Kanit);
+  font-weight: normal;
+  font-size: var(--Size-pB);
+}
