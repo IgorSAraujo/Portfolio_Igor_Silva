@@ -4,6 +4,7 @@ import "./styles/typography.scss"
 import { Header } from "./components/Header"
 import { Main } from "./components/Main"
 import { Footer } from "./components/Footer"
+import { Body } from "./components/Body"
 
 function App() {
   const [toogleMode, setToogleMode] = useState(false)
@@ -35,9 +36,7 @@ function App() {
 
   return (
     <>
-      <Header toogleMode={toogleMode} toggleTheme={toggleTheme} />
-      <Main />
-      <Footer />
+      <Body toogleMode={toogleMode} toggleTheme={toggleTheme} />
     </>
   )
 }
