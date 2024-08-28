@@ -4,9 +4,13 @@ import styles from "./styles.module.scss"
 
 export const Body = ({ toogleMode, toggleTheme }) => {
   return (
-    <>
-      <ProfileSide toogleMode={toogleMode} toggleTheme={toggleTheme} />
-      <InfosSide />
-    </>
+    <div className={styles.container}>
+      <ProfileSide
+        className={styles.containerProfile}
+        toogleMode={toogleMode}
+        toggleTheme={toggleTheme}
+      />
+      <InfosSide className={styles.containerInfos} />
+    </div>
   )
 }
