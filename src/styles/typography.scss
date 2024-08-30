@@ -1,19 +1,13 @@
-.textBanner {
+.titleProfile {
   font-family: var(--Kanit);
-  font-size: clamp(1.25rem, 0.357rem + 4.464vw, 4.375rem);
+  font-size: 25px;
   font-weight: 600;
 }
 
-.textH1 {
-  font-family: var(--Kanit);
-  font-size: var(--Size-h1);
-  font-weight: 600;
-}
-
-.textH2 {
+.textProfile {
   font-family: var(--Kanit);
   font-weight: normal;
-  font-size: var(--Size-h2);
+  font-size: 16px;
 }
 .textH3 {
   font-family: var(--Kanit);

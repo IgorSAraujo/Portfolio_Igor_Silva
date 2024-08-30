@@ -1,0 +1,51 @@
+.container {
+  width: 300px;
+  background-color: var(--bg-profile01);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0px 15px;
+  height: 100vh;
+  overflow-y: scroll;
+  color: var(--color-textProfile);
+
+  .profile {
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    color: var(--color-titleProfile);
+    padding: 30px 0px;
+
+    .profileImg {
+      position: relative;
+
+      .profilePic {
+        z-index: 2;
+        width: 125px;
+        cursor: pointer;
+        border-radius: 50%;
+        position: relative;
+      }
+
+      .imgBackground {
+        background-color: var(--bg-profile02);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 125px;
+        height: 125px;
+        border-radius: 50%;
+        z-index: 1;
+        transition: ease-in 0.4s;
+      }
+
+      .profilePic:hover ~ .imgBackground {
+        scale: 120%;
+      }
+    }
+  }
+}

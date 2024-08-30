@@ -1,55 +1,26 @@
 import styles from "./styles.module.scss"
+import profilePic from "../../../assets/02_portfolio.png"
+import { Socials } from "./Socials"
+import { ToogleTheme } from "./ToogleTheme"
+import { NavPage } from "./NavPage"
 
 export const ProfileSide = ({ toogleMode, toggleTheme }) => {
   return (
     <div className={styles.container}>
+      <ToogleTheme toogleMode={toogleMode} toggleTheme={toggleTheme} />
       <div className={styles.profile}>
-        <img src="" alt="" />
-        <h2>Igor Araujo</h2>
+        <div className={styles.profileImg}>
+          <img
+            className={styles.profilePic}
+            src={profilePic}
+            alt="Foto de Igor Sentado na Cadeira"
+          />
+          <span className={styles.imgBackground}></span>
+        </div>
+        <h1 className="titleProfile">Igor Araujo</h1>
       </div>
-      <div className={styles.socials}>
-        <a
-          className="Social"
-          href="https://x.com/IgorSaraujoDev"
-          target="blank"
-        >
-          Twitter
-        </a>
-        <a
-          className="Social"
-          href="https://www.instagram.com/igorsaraujo.dev/?utm_source=ig_web_button_share_sheet"
-          target="blank"
-        >
-          Insta
-        </a>
-        <a className="Social" href="https://wa.link/hzoi4d" target="blank">
-          Whats
-        </a>
-        <a
-          className="Social"
-          href="https://linkedin.com/in/igorsaraujo2903/"
-          target="blank"
-        >
-          Linkedin
-        </a>
-        <a
-          className="Social"
-          href="https://github.com/IgorSAraujo"
-          target="blank"
-        >
-          GitHub
-        </a>
-      </div>
-      <div className={styles.toogleContainer}>
-        <span></span>
-      </div>
-      <nav className={styles.navContainer}>
-        <span>Inicio</span>
-        <span>Sobre-Mim</span>
-        <span>Tecnologias</span>
-        <span>Projetos</span>
-        <span>Contato</span>
-      </nav>
+      <Socials />
+      <NavPage />
     </div>
   )
 }
