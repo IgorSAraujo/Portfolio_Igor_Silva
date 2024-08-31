@@ -9,19 +9,31 @@
   font-weight: normal;
   font-size: 16px;
 }
-.textH3 {
+.titleBanner {
   font-family: var(--Kanit);
-  font-weight: 500;
-  font-size: var(--Size-h3);
+  font-weight: 600;
+  font-size: clamp(2rem, -0.286rem + 4.762vw, 4rem);
+}
+.subTitleBanner {
+  font-family: var(--Kanit);
+  font-weight: 300;
+  font-size: 32px;
 }
 
-.textP {
+.titleInfos {
   font-family: var(--Kanit);
-  font-weight: normal;
-  font-size: var(--Size-p);
+  font-weight: 600;
+  font-size: 32px;
 }
-.textPb {
+
+.subTitleInfos {
   font-family: var(--Kanit);
-  font-weight: normal;
-  font-size: var(--Size-pB);
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.textInfos {
+  font-family: var(--Kanit);
+  font-weight: 300;
+  font-size: 18px;
 }

@@ -1,0 +1,82 @@
+.container {
+  max-width: 100%;
+  background-color: var(--bg-infos);
+  box-sizing: border-box;
+  padding: 50px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3.125rem;
+
+  .titleContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 25px;
+
+    h2 {
+      padding-bottom: 10px;
+      border-bottom: 3px solid var(--color-blue);
+      color: var(--color-titleInfos);
+    }
+
+    p {
+      color: var(--color-textInfos);
+    }
+  }
+
+  .contentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5625rem;
+
+    .subtitleContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+      gap: 1.5625rem;
+
+      h3 {
+        color: var(--color-titleInfos);
+      }
+      p {
+        color: var(--color-textInfos);
+      }
+    }
+
+    .listsContainer {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 7.5rem;
+
+      .list {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 1.5625rem;
+
+        li {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+
+          .itenIcon {
+            color: var(--color-blue);
+          }
+          .itemName {
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}

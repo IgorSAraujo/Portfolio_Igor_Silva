@@ -9,7 +9,7 @@ import { TechSection } from "./TechSection"
 export const InfosSide = () => {
   return (
     <div className={styles.container}>
-      <HomeSection id="home" />
+      <HomeSection />
       <AboutSection />
       <TechSection />
       <ProjectsSection />
