@@ -24,6 +24,7 @@
 
     p {
       color: var(--color-textInfos);
+      text-align: justify;
     }
   }
 
@@ -33,6 +34,10 @@
     align-items: center;
     justify-content: center;
     gap: 1.5625rem;
+
+    p {
+      text-align: justify;
+    }
 
     .subtitleContainer {
       display: flex;
@@ -46,6 +51,7 @@
       }
       p {
         color: var(--color-textInfos);
+        text-align: justify;
       }
     }
 
