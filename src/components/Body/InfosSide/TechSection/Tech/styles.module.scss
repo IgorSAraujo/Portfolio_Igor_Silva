@@ -1,0 +1,50 @@
+$tech-colors: (
+  "html-tech": #e34c26,
+  "css-tech": #264de4,
+  "sass-tech": #cc6699,
+  "js-tech": #f0db4f,
+  "react-tech": #61dafb,
+  "typescript-tech": #3178c6,
+  "psql-tech": #336791,
+  "git-tech": #f34f29,
+  "nodejs-tech": #339933,
+);
+
+:global {
+  @each $class, $color in $tech-colors {
+    .#{$class} {
+      transition: 0.3s ease;
+
+      .container:hover & {
+        color: $color;
+      }
+    }
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  width: 150px;
+  height: 150px;
+  gap: 0.9375rem;
+  color: var(--bg-profile01);
+  transition: ease-in-out 0.5s;
+
+  &:hover {
+    color: var(--color-blue);
+    cursor: pointer;
+    box-shadow: 5px 10px 22px 0px rgba(0, 0, 0, 0.5);
+  }
+
+  .containerTech {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.625rem;
+  }
+}
