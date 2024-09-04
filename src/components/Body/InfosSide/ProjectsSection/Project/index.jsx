@@ -9,7 +9,7 @@ export const Project = ({ img, name, link, description }) => {
         <div className={styles.containerName}>
           <span className="subTitleTextInfos">{name}</span>
         </div>
-        <div className={containerInfos}>
+        <div className={styles.containerInfos}>
           <a href={link} target="_blank" rel="noopener noreferrer">
             <HiLink size={21} />
           </a>
