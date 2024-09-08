@@ -45,7 +45,7 @@ export const TechSection = () => {
           <Tech
             icon={IoLogoJavascript}
             techName={"JavaScript"}
-            techLevel={"Avançado"}
+            techLevel={"Intermediário"}
             className={"js-tech"}
           />
         </li>
@@ -61,7 +61,7 @@ export const TechSection = () => {
           <Tech
             icon={BiLogoTypescript}
             techName={"TypeScript"}
-            techLevel={"Avançado"}
+            techLevel={"Intermediário"}
             className={"typescript-tech"}
           />
         </li>

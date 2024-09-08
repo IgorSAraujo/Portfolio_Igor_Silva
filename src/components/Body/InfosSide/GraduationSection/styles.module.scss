@@ -6,7 +6,6 @@
   align-items: start;
   justify-content: center;
   width: 100%;
-  gap: 3.125rem;
 
   .titleContainer {
     display: flex;
@@ -22,6 +21,24 @@
     }
     p {
       text-align: justify;
+    }
+  }
+
+  .certificadesContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 40px 50px 40px 50px;
+
+    .slideItem {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.9375rem;
     }
   }
 }
