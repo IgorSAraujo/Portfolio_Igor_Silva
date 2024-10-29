@@ -12,7 +12,7 @@ export const NavPage = () => {
         <li className="textProfile">
           <a href="#home" className={styles.item}>
             <AiOutlineHome size={25} className={`${styles.itemIcon}`} />
-            Inicio Home
+            Inicio
           </a>
         </li>
         <li className="textProfile">
